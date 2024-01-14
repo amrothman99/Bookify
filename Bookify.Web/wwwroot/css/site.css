@@ -1,0 +1,37 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Start override theme */
+
+.form-floating > .form-select {
+    padding-bottom: 0.225rem;
+}
+
+/* End override theme */
+
+/* Start custom styles */
+
+.dt-spinner + div {
+    display : none !important;
+}
+
+.h-70px {
+    height: 70px !important;
+}
+/* End custom styles */
