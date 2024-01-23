@@ -84,3 +84,4 @@ C:\Users\amrot\source\repos\Bookify\Bookify.Web\bin\Debug\net6.0\Microsoft.IO.Re
 C:\Users\amrot\source\repos\Bookify\Bookify.Web\bin\Debug\net6.0\SixLabors.ImageSharp.dll
 C:\Users\amrot\source\repos\Bookify\Bookify.Web\bin\Debug\net6.0\SixLabors.ImageSharp.Web.dll
 C:\Users\amrot\source\repos\Bookify\Bookify.Web\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+C:\Users\amrot\source\repos\Bookify\Bookify.Web\obj\Debug\net6.0\Bookify.Web.sourcelink.json

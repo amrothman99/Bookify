@@ -1753,6 +1753,10 @@
       "PackagePath": "staticwebassets\\images\\image-placeholder.jpg"
     },
     {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\js\\book-details.js",
+      "PackagePath": "staticwebassets\\js\\book-details.js"
+    },
+    {
       "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\js\\books.js",
       "PackagePath": "staticwebassets\\js\\books.js"
     },

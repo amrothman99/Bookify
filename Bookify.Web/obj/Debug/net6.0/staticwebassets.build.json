@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wlJAdv7h/85bX1yyMzeniSa0yN9FLj8dBfLgUgMzHwo=",
+  "Hash": "q9SEERyYrx1YNXpVtdDuT++U5wF6aqMEUNmfD9MVs7o=",
   "Source": "Bookify.Web",
   "BasePath": "_content/Bookify.Web",
   "Mode": "Default",
@@ -9496,6 +9496,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\image-placeholder.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\js\\book-details.js",
+      "SourceId": "Bookify.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\",
+      "BasePath": "_content/Bookify.Web",
+      "RelativePath": "js/book-details.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\book-details.js"
     },
     {
       "Identity": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\js\\books.js",

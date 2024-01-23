@@ -34,19 +34,14 @@ function showErrorMessage(message = 'Something went wrong!') {
 };
 
 function onModalSuccess(row) {
-    var modal = $('.modal');
     showSuccessMessage();
+    $('.modal').modal('hide');
     if (updatedRow !== undefined) {
         datatable.row(updatedRow).remove().draw();
         updatedRow = undefined;
     }
     var newRow = $(row);
     datatable.row.add(newRow).draw();
-
-    KTMenu.init();
-    KTMenu.initHandlers();
-
-    modal.modal('hide');
 };
 
 function onModalComplete() {

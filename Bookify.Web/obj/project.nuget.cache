@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0l4AtqJcpPEQYMdl1+isSMiMVYqweqXkkq5tY76k0ZNFPcSbLYOywnsXYvS4/EQkQF2trUbQrQKAnRE6YNJ65g==",
+  "dgSpecHash": "dQjKa8K5xWsNOEhv8Uy/wisIzpYGLtAhgb6VO+HbdbzXZASqeF6+5y6Q5OotwZ6dY7ckw2p523uoWQnPHVIBcQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\Bookify.Web.csproj",
   "expectedPackageFiles": [
@@ -74,7 +74,11 @@
     "C:\\Users\\amrot\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512",
     "C:\\Users\\amrot\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\amrot\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\amrot\\.nuget\\packages\\uon.expressiveannotations.netcore\\1.0.0\\uon.expressiveannotations.netcore.1.0.0.nupkg.sha512"
+    "C:\\Users\\amrot\\.nuget\\packages\\uon.expressiveannotations.netcore\\1.0.0\\uon.expressiveannotations.netcore.1.0.0.nupkg.sha512",
+    "C:\\Users\\amrot\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\amrot\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\amrot\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\amrot\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }
