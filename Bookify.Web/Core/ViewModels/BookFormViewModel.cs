@@ -34,6 +34,7 @@ namespace Bookify.Web.Core.ViewModels
         public bool IsAvailableForRental { get; set; }
 
         public string Description { get; set; } = null!;
+        [Display(Name = "Categories")]
         public IList<int> SelectedCategories { get; set; } = new List<int>();
 
         public IEnumerable<SelectListItem>? Categories { get; set; }

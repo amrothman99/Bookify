@@ -1,11 +1,11 @@
-﻿using Bookify.Web.Core.Models;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
 using System.Linq.Dynamic.Core;
 
 namespace Bookify.Web.Controllers
 {
+    [Authorize(Roles = AppRoles.Archive)]
     public class BooksController : Controller
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
@@ -121,6 +121,8 @@ namespace Bookify.Web.Controllers
                 image.Mutate(i => i.Resize(width: 200, height: (int)height));
                 image.Save(thumbPath);
             }
+
+            book.CreatedById = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
             
             foreach (var category in model.SelectedCategories)
                 book.Categories.Add( new BookCategory { CategoryId = category});
@@ -153,7 +155,10 @@ namespace Bookify.Web.Controllers
             if (!ModelState.IsValid)
                 return View("Form", PopulateViewModel(model));
 
-            var book = _context.Books.Include(b => b.Categories).SingleOrDefault(b => b.Id == model.Id);
+            var book = _context.Books
+                .Include(b => b.Categories)
+                .Include(b => b.Copies)
+                .SingleOrDefault(b => b.Id == model.Id);
 
             if (book is null)
                 return NotFound();
@@ -196,12 +201,18 @@ namespace Bookify.Web.Controllers
             }
               
             book = _mapper.Map(model, book);
+            book.LastUpdatedById = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
             book.LastUpdatedOn = DateTime.Now;
 
             foreach (var category in model.SelectedCategories)
                 book.Categories.Add(new BookCategory { CategoryId = category });
 
-            _context.Update(book);
+            if (!model.IsAvailableForRental)
+            {
+                foreach (var copy in book.Copies)
+                    copy.IsAvailableForRental = false;
+            }
+
             _context.SaveChanges();
 
             return RedirectToAction(nameof(Details), new { id = book.Id });
@@ -217,6 +228,7 @@ namespace Bookify.Web.Controllers
                 return NotFound();
 
             book!.IsDeleted = !book.IsDeleted;
+            book.LastUpdatedById = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
             book.LastUpdatedOn = DateTime.Now;
 
             _context.SaveChanges();

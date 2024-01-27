@@ -8,21 +8,17 @@
       data-ajax-failure="showErrorMessage"
       data-ajax-complete="onModalComplete">
 
-    <input type="hidden" asp-for="BookId"/>
+    <input type="hidden" asp-for="BookId" />
     @if (Model?.Id > 0)
     {
         <input type="hidden" asp-for="Id" />
     }
-    <div class="row">
-        <div>
-            <div class="mb-5">
-                <div class="form-floating mb-2">
-                    <input type="text" class="form-control" placeholder="Edition Number" asp-for="EditionNumber" value="@(Model?.Id > 0 ? Model.EditionNumber : string.Empty)" />
-                    <label asp-for="EditionNumber"></label>
-                </div>
-                <span class="text-danger d-block" asp-validation-for="EditionNumber"></span>
-            </div>
+    <div class="mb-5">
+        <div class="form-floating mb-2">
+            <input type="text" class="form-control" placeholder="Edition Number" asp-for="EditionNumber" value="@(Model?.Id > 0 ? Model.EditionNumber : string.Empty)" />
+            <label asp-for="EditionNumber"></label>
         </div>
+        <span class="text-danger d-block" asp-validation-for="EditionNumber"></span>
     </div>
     @if (Model!.ShowRentalInput)
     {

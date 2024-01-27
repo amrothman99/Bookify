@@ -167,13 +167,24 @@
 						<a href="../../demo14/dist/account/overview.html" class="menu-link px-5">My Profile</a>
 					</div>
 					<!--end::Menu item-->
+					<!--end::Menu item-->
+					<!--begin::Menu separator-->
+					<div class="separator my-2"></div>
+					<!--end::Menu separator-->
+					<!--begin::Menu item-->
+					<div class="menu-item px-5">
+						<a href="../../demo14/dist/account/overview.html" class="menu-link px-5">Account Settings</a>
+					</div>
+					<!--end::Menu item-->
 					<!--begin::Menu item-->
 					<!--begin::Menu separator-->
 					<div class="separator my-2"></div>
 					<!--end::Menu separator-->
 					<!--begin::Menu item-->
 					<div class="menu-item px-5">
-						<a href="../../demo14/dist/authentication/layouts/corporate/sign-in.html" class="menu-link px-5">Sign Out</a>
+						<form id="SignOut" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/">
+							<a class="menu-link px-5 js-signout">Sign Out</a>
+						</form>
 					</div>
 					<!--end::Menu item-->
 				</div>

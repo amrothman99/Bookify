@@ -1,5 +1,6 @@
 ﻿namespace Bookify.Web.Controllers
 {
+    [Authorize(Roles = AppRoles.Archive)]
     public class AuthorsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -31,10 +32,8 @@
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            var author = new Author
-            {
-                Name = model.Name,
-            };
+            var author = _mapper.Map<Author>(model);
+            author.CreatedById = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
 
             _context.Authors.Add(author);
             _context.SaveChanges();
@@ -66,7 +65,8 @@
             if (author == null)
                 return NotFound();
 
-            author!.Name = model.Name;
+            author = _mapper.Map(model, author);
+            author.LastUpdatedById = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
             author.LastUpdatedOn = DateTime.Now;
 
             _context.SaveChanges();
@@ -86,6 +86,7 @@
                 return NotFound();
 
             author!.IsDeleted = !author.IsDeleted;
+            author.LastUpdatedById = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
             author.LastUpdatedOn = DateTime.Now;
 
             _context.SaveChanges();

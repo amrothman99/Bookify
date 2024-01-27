@@ -11,14 +11,12 @@
     {
         <input type="hidden" asp-for="Id" />
     }
-    <div class="row">
-        <div class="mb-5">
-            <div class="form-floating mb-2">
-                <input type="text" class="form-control" placeholder="Name" asp-for="Name" />
-                <label asp-for="Name"></label>
-            </div>
-            <span class="text-danger d-block" asp-validation-for="Name"></span>
+    <div class="mb-5">
+        <div class="form-floating mb-2">
+            <input type="text" class="form-control" placeholder="Name" asp-for="Name" />
+            <label asp-for="Name"></label>
         </div>
+        <span class="text-danger d-block" asp-validation-for="Name"></span>
     </div>
     <partial name="_ModalFooter" />
 </form>
