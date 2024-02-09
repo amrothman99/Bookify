@@ -8,7 +8,8 @@ namespace Bookify.Web.Core.ViewModels
     {
         public string? Id { get; set; }
 
-        [MaxLength(100, ErrorMessage = Errors.MaxLength), Display(Name = "Full Name")]
+        [MaxLength(100, ErrorMessage = Errors.MaxLength), Display(Name = "Full Name"),
+            RegularExpression(RegexPatterns.CharactersOnly_Eng, ErrorMessage = Errors.OnlyEnglishLetters)]
         public string FullName { get; set; } = null!;
 
         [MaxLength(20, ErrorMessage = Errors.MaxLength), Display(Name = "Username"),

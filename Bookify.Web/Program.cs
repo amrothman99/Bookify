@@ -5,6 +5,7 @@ using System.Reflection;
 using UoN.ExpressiveAnnotations.NetCore.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Bookify.Web.Data;
+using Bookify.Web.Helpers;
 
 namespace Bookify.Web
 {
@@ -27,7 +28,10 @@ namespace Bookify.Web
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultUI()
                 .AddDefaultTokenProviders();
-            builder.Services.AddControllersWithViews();
+
+			builder.Services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
+
+			builder.Services.AddControllersWithViews();
 
             builder.Services.Configure<IdentityOptions>(options =>
             {

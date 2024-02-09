@@ -145,12 +145,92 @@
       "PackagePath": "staticwebassets\\assets\\css\\style.bundle.css"
     },
     {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\401.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\401.svg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\Logo_sm.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Logo_sm.png"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\Vault-bro.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\Vault-bro.svg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\avatar-blank.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\avatar-blank.svg"
+    },
+    {
       "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\avatar.png",
       "PackagePath": "staticwebassets\\assets\\images\\avatar.png"
     },
     {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\bg10-dark.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg10-dark.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\bg10.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg10.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\bg3-dark.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg3-dark.jpg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\bg3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\bg5-dark.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg5-dark.jpg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\bg5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\bg6-dark.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg6-dark.jpg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\bg6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\bg8-dark.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg8-dark.jpg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\bg8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\login.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\login.svg"
+    },
+    {
       "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\logo.png",
       "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\mail-sent.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\mail-sent.svg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\ok-dark.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ok-dark.png"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\ok.png",
+      "PackagePath": "staticwebassets\\assets\\images\\ok.png"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\reset-password.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\reset-password.svg"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\images\\welocme.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\welocme.svg"
     },
     {
       "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\assets\\js\\plugins.bundle.js",
@@ -1841,8 +1921,8 @@
       "PackagePath": "staticwebassets\\lib\\sweetalert2\\sweetalert2.min.js"
     },
     {
-      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\myico.ico",
-      "PackagePath": "staticwebassets\\myico.ico"
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\myicon.ico",
+      "PackagePath": "staticwebassets\\myicon.ico"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Bookify.Web.Microsoft.AspNetCore.StaticWebAssets.props",
