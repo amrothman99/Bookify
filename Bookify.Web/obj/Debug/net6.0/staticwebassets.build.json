@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XX0pw2KFn/E8kmUO9EkKJxEXwmsA6Ew+VJt6FPvdygM=",
+  "Hash": "Rmafst8EJsXhVsw4c2sdn59aku9FeZnhzRn2A/V2PK8=",
   "Source": "Bookify.Web",
   "BasePath": "_content/Bookify.Web",
   "Mode": "Default",
@@ -6116,6 +6116,25 @@
       "OriginalItemSpec": "wwwroot\\images\\books\\ebd88d08-18fa-4911-af1e-a4514c91ab72.jpg"
     },
     {
+      "Identity": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\images\\books\\ecfb0878-bd73-43ad-b0dd-b2902fd1e4e8.jpg",
+      "SourceId": "Bookify.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\",
+      "BasePath": "_content/Bookify.Web",
+      "RelativePath": "images/books/ecfb0878-bd73-43ad-b0dd-b2902fd1e4e8.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\books\\ecfb0878-bd73-43ad-b0dd-b2902fd1e4e8.jpg"
+    },
+    {
       "Identity": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\images\\books\\ee35a855-b762-48aa-bc4a-9d270418fbab.jpg",
       "SourceId": "Bookify.Web",
       "SourceType": "Discovered",
@@ -9498,6 +9517,25 @@
       "OriginalItemSpec": "wwwroot\\images\\books\\thumb\\ebd88d08-18fa-4911-af1e-a4514c91ab72.jpg"
     },
     {
+      "Identity": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\images\\books\\thumb\\ecfb0878-bd73-43ad-b0dd-b2902fd1e4e8.jpg",
+      "SourceId": "Bookify.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\",
+      "BasePath": "_content/Bookify.Web",
+      "RelativePath": "images/books/thumb/ecfb0878-bd73-43ad-b0dd-b2902fd1e4e8.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\books\\thumb\\ecfb0878-bd73-43ad-b0dd-b2902fd1e4e8.jpg"
+    },
+    {
       "Identity": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\images\\books\\thumb\\ee35a855-b762-48aa-bc4a-9d270418fbab.jpg",
       "SourceId": "Bookify.Web",
       "SourceType": "Discovered",
@@ -9916,6 +9954,25 @@
       "OriginalItemSpec": "wwwroot\\js\\books.js"
     },
     {
+      "Identity": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\js\\profile.js",
+      "SourceId": "Bookify.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\",
+      "BasePath": "_content/Bookify.Web",
+      "RelativePath": "js/profile.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\profile.js"
+    },
+    {
       "Identity": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\js\\site.js",
       "SourceId": "Bookify.Web",
       "SourceType": "Discovered",
@@ -10313,6 +10370,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\myicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\templates\\email.html",
+      "SourceId": "Bookify.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\",
+      "BasePath": "_content/Bookify.Web",
+      "RelativePath": "templates/email.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\templates\\email.html"
     }
   ]
 }

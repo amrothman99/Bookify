@@ -5,7 +5,8 @@ using System.Reflection;
 using UoN.ExpressiveAnnotations.NetCore.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Bookify.Web.Data;
-using Bookify.Web.Helpers;
+using Bookify.Web.Settings;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace Bookify.Web
 {
@@ -22,6 +23,7 @@ namespace Bookify.Web
 
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
             builder.Services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingProfile)));
+            builder.Services.Configure<MailSettings>(builder.Configuration.GetSection(nameof(MailSettings)));
             builder.Services.AddExpressiveAnnotations();
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -30,7 +32,8 @@ namespace Bookify.Web
                 .AddDefaultTokenProviders();
 
 			builder.Services.AddScoped<IUserClaimsPrincipalFactory<ApplicationUser>, ApplicationUserClaimsPrincipalFactory>();
-
+            builder.Services.AddTransient<IImageService, ImageService>();
+            builder.Services.AddTransient<IEmailSender, EmailSender>();
 			builder.Services.AddControllersWithViews();
 
             builder.Services.Configure<IdentityOptions>(options =>
@@ -38,6 +41,9 @@ namespace Bookify.Web
                 options.Password.RequiredLength = 8;
                 options.User.RequireUniqueEmail = true;
             });
+
+            builder.Services.Configure<SecurityStampValidatorOptions>(options => 
+                options.ValidationInterval = TimeSpan.Zero);
 
             var app = builder.Build();
 

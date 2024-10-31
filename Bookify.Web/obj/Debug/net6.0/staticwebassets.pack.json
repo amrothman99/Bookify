@@ -1041,6 +1041,10 @@
       "PackagePath": "staticwebassets\\images\\books\\ebd88d08-18fa-4911-af1e-a4514c91ab72.jpg"
     },
     {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\images\\books\\ecfb0878-bd73-43ad-b0dd-b2902fd1e4e8.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\ecfb0878-bd73-43ad-b0dd-b2902fd1e4e8.jpg"
+    },
+    {
       "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\images\\books\\ee35a855-b762-48aa-bc4a-9d270418fbab.jpg",
       "PackagePath": "staticwebassets\\images\\books\\ee35a855-b762-48aa-bc4a-9d270418fbab.jpg"
     },
@@ -1753,6 +1757,10 @@
       "PackagePath": "staticwebassets\\images\\books\\thumb\\ebd88d08-18fa-4911-af1e-a4514c91ab72.jpg"
     },
     {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\images\\books\\thumb\\ecfb0878-bd73-43ad-b0dd-b2902fd1e4e8.jpg",
+      "PackagePath": "staticwebassets\\images\\books\\thumb\\ecfb0878-bd73-43ad-b0dd-b2902fd1e4e8.jpg"
+    },
+    {
       "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\images\\books\\thumb\\ee35a855-b762-48aa-bc4a-9d270418fbab.jpg",
       "PackagePath": "staticwebassets\\images\\books\\thumb\\ee35a855-b762-48aa-bc4a-9d270418fbab.jpg"
     },
@@ -1841,6 +1849,10 @@
       "PackagePath": "staticwebassets\\js\\books.js"
     },
     {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\js\\profile.js",
+      "PackagePath": "staticwebassets\\js\\profile.js"
+    },
+    {
       "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -1923,6 +1935,10 @@
     {
       "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\myicon.ico",
       "PackagePath": "staticwebassets\\myicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\amrot\\source\\repos\\Bookify\\Bookify.Web\\wwwroot\\templates\\email.html",
+      "PackagePath": "staticwebassets\\templates\\email.html"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Bookify.Web.Microsoft.AspNetCore.StaticWebAssets.props",

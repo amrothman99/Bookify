@@ -51,7 +51,7 @@
                 }
             },
             { "data": "hall", "name": "Hall" },
-            { "data": "categories", "name": "Categories", "orderable": false },
+            /*{ "data": "categories", "name": "Categories", "orderable": false },*/
             {
                 "name": "IsAvailableForRental",
                 "render": function (data, type, row) {

@@ -1,7 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.WebUtilities;
 using System.Security.Claims;
+using System.Text.Encodings.Web;
+using System.Text;
 
 namespace Bookify.Web.Controllers
 {
@@ -10,16 +14,24 @@ namespace Bookify.Web.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IEmailSender _emailSender;
+        private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IMapper _mapper;
 
-        public UsersController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IMapper mapper)
+        public UsersController(UserManager<ApplicationUser> userManager,
+            RoleManager<IdentityRole> roleManager,
+            IEmailSender emailSender,
+            IWebHostEnvironment webHostEnvironment,
+            IMapper mapper)
         {
             _userManager = userManager;
             _roleManager = roleManager;
+            _emailSender = emailSender;
+            _webHostEnvironment = webHostEnvironment;
             _mapper = mapper;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             var users = _userManager.Users.ToList();
             var viewModel = _mapper.Map<IEnumerable<UserViewModel>>(users);
@@ -63,6 +75,31 @@ namespace Bookify.Web.Controllers
             if (result.Succeeded)
             {
                 await _userManager.AddToRolesAsync(user, model.SelectedRoles);
+
+                var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                var callbackUrl = Url.Page(
+                    "/Account/ConfirmEmail",
+                    pageHandler: null,
+                    values: new { area = "Identity", userId = user.Id, code },
+                    protocol: Request.Scheme);
+
+                var filePath = $"{_webHostEnvironment.WebRootPath}/templates/email.html";
+                var str = new StreamReader(filePath);
+                var body = str.ReadToEnd();
+                str.Close();
+
+                //var url = Url.Action("Index", "Home", null, Request.Scheme);
+
+                body = body
+                    .Replace("[imageUrl]", "https://res.cloudinary.com/amrothman/image/upload/v1709790928/icon-positive-vote-1_ylqpce.svg")
+                    .Replace("[header]", $"Hey {user.FullName}, thanks for joining us!")
+                    .Replace("[body]", "Please confirm your email")
+                    .Replace("[url]", $"{HtmlEncoder.Default.Encode(callbackUrl!)}")
+                    .Replace("[linkTitle]", "Active Account!");
+
+                await _emailSender.SendEmailAsync(user.Email, "Confirm your email", body);
+
                 var viewModel = _mapper.Map<UserViewModel>(user);
                 return PartialView("_UserRow", viewModel);
             }
@@ -120,6 +157,8 @@ namespace Bookify.Web.Controllers
                     await _userManager.RemoveFromRolesAsync(user, currentRoles);
                     await _userManager.AddToRolesAsync(user, model.SelectedRoles);
                 }
+
+                await _userManager.UpdateSecurityStampAsync(user);
                 
                 var viewModel = _mapper.Map<UserViewModel>(user);
                 return PartialView("_UserRow", viewModel);
@@ -142,6 +181,10 @@ namespace Bookify.Web.Controllers
             user.LastUpdatedById = User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
 
             await _userManager.UpdateAsync(user);
+
+            if (user.IsDeleted)
+                await _userManager.UpdateSecurityStampAsync(user);
+
             return Ok(user.LastUpdatedOn.ToString());
         }
 
